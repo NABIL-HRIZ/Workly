@@ -116,7 +116,8 @@ border-radius: 20px;
     padding-top: 20px;
 }
 .offers h3{
-    font-weight:400;
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 .offers p{
     font-weight:300;
@@ -153,10 +154,20 @@ border-radius: 20px;
 }
 .missions h3{
     font-size: 20px;
-    letter-spacing: 2px;
-   
+    letter-spacing: 2px;  
 }
 .missions h4{
     font-size:15px;
     font-weight: 300;
+}
+.contact{
+    width: 100%;
+    height: 80vh;
+    background-color: #C5CAFF;
+}.contact h6{
+    font-size: 10px;
+}
+.contact h3{
+    font-size: 20px;
+    letter-spacing: 2px;
 }
