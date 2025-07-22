@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Geist+Mono:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Protest+Riot&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    color: #A3A572;
+    font-weight: bold;
+}
+.navbar-collapse{
+    padding-left:100px;
+}
+.nav-link{
+    margin-left: 20px;
+}
+
+.nav-link:hover{
+    border-bottom: 3px solid #866FE3;
+    transition: .1S ease-in-out ;
+}
+header .btn{
+    margin-right: 100px;
+}
+.btn{
+    border:none;
+    outline: none;
+    border-radius:40px;
+    background-color:#866FE3 ;
+    color: #fff;
+    font-size:15px;
+}
+.btn:hover{
+    border:2px solid #866FE3
+}
+.section-hero {
+  width: 100%;
+  height:80vh;
+  background-color:#C5CAFF;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.section-hero img{
+height:300px;
+width:400px;
+border-radius: 20px;
+}
+.section-hero p{
+    letter-spacing:2px;
+    line-height:30px;
+}
+.section-services{
+  width: 100%;
+  height:80vh;
+  background-color:#000;
+  padding-top:40px; 
+}
+.section-services h6{
+    font-size: 10px;
+    color: #eae7e7;
+}
+.section-services p{
+    font-size:15px;
+    font-weight:200;
+}
+.section-services i{
+    color: #A3A572;
+    font-size:40px;
+}
+.section-services h3{
+    color:#eae7e7;
+    font-size:20px;
+    font-weight:250;
+}
+.services-icons{
+    margin-left: 20px;
+    margin-top: 20px;
+     cursor: pointer;
+     padding: 10px;
+      transition: transform 0.3s ease;
+}
+.services-icons:hover{
+     background-color: rgb(32, 32, 32);
+     transform: translateY(-10px);
+     z-index: 2;
+}
+
+.section-offers{
+    width: 100%;
+    height:100vh;
+    background-color:#f3f8e0;
+    padding-top: 20px;
+}
+
+.section-offers h6{
+    font-size: 10px;
+    color:#000;
+}
+
+.section-offers h3{
+ font-size: 20px;
+    letter-spacing: 2px;   
+}
+.offers{
+    width: 100%;
+    height:300px;
+    background:#cdcd9b;
+    margin-left:20px;
+    padding-top: 20px;
+}
+.offers h3{
+    font-weight:400;
+}
+.offers p{
+    font-weight:300;
+    
+}
+.btn-offers{
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color:#000;
+  background: none;
+  border: 2px solid #e8e8d8;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.liquid {
+  background: linear-gradient(#e8e8d8 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.liquid:hover {
+  --p: 100%;
+  --t: 0.3s;
+}
+
+.missions h6{
+    font-size: 10px;
+}
+.missions h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+   
+}
+.missions h4{
+    font-size:15px;
+    font-weight: 300;
+}
