@@ -5,7 +5,11 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-
+}
+h6{
+ font-size:20px !important;
+  font-weight:500 !important;
+  margin-bottom: 20px !important;
 }
 .navbar-brand{
     font-size: 30px;
@@ -35,12 +39,14 @@ header .btn{
     color: #fff;
     font-size:15px;
 }
+
+
 .btn:hover{
     border:2px solid #866FE3
 }
 .section-hero {
   width: 100%;
-  height:80vh;
+  height:100vh;
   background-color:#C5CAFF;
   padding-top: 0;
   display: flex;
@@ -48,7 +54,7 @@ header .btn{
 }
 
 .section-hero img{
-height:300px;
+height:400px;
 width:400px;
 border-radius: 20px;
 }
@@ -58,7 +64,7 @@ border-radius: 20px;
 }
 .section-services{
   width: 100%;
-  height:80vh;
+  height:70vh;
   background-color:#000;
   padding-top:40px; 
 }
@@ -80,6 +86,7 @@ border-radius: 20px;
     font-weight:250;
 }
 .services-icons{
+  border:3px solid rgb(32, 32, 32);
     margin-left: 20px;
     margin-top: 20px;
      cursor: pointer;
@@ -91,6 +98,25 @@ border-radius: 20px;
      transform: translateY(-10px);
      z-index: 2;
 }
+
+.gallery {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #edf0de; 
+}
+
+.carousel {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 400px;
+}
+
 
 .section-offers{
     width: 100%;
@@ -171,7 +197,9 @@ border-radius: 20px;
     font-size: 20px;
     letter-spacing: 2px;
 }
-
+.contact form{
+    margin-top:-20px;
+}
 .footer{
     background-color: #000;
     color: #fff;
@@ -201,8 +229,10 @@ border-radius: 20px;
     margin-left: 40px;
     font-size:30px;
     color: #A3A572;
-
+    cursor:pointer ;
 }
+
+
 .infos{
     display: flex;
     flex-direction: column;
@@ -219,5 +249,5 @@ margin-right: 20px;
     font-size:15px;
     color: #d3d3d3;
     
-
 }
+
