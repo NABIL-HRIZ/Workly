@@ -7,14 +7,15 @@ body{
     font-family: "Poppins", sans-serif;
 }
 h6{
- font-size:20px !important;
-  font-weight:500 !important;
+ font-size:18px !important;
+  font-weight:400 !important;
   margin-bottom: 20px !important;
+  color: #866FE3 !important;
 }
 .navbar-brand{
     font-size: 30px;
     font-weight: bold;
-    color: #A3A572;
+    color:#A3A572;
     font-weight: bold;
 }
 .navbar-collapse{
@@ -47,7 +48,7 @@ header .btn{
 .section-hero {
   width: 100%;
   height:100vh;
-  background-color:#C5CAFF;
+  background-color:#eef3cc;
   padding-top: 0;
   display: flex;
   align-items: center;
@@ -100,23 +101,22 @@ border-radius: 20px;
 }
 
 .gallery {
-  text-align: center;
   padding: 40px 20px;
   background-color: #edf0de; 
 }
 
 .carousel {
-  max-width: 800px;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius:10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .carousel-inner img {
   object-fit: cover;
-  height: 400px;
-}
+  height:450px;
+  border-radius:30px;
 
+}
 
 .section-offers{
     width: 100%;
@@ -186,20 +186,30 @@ border-radius: 20px;
     font-size:15px;
     font-weight: 300;
 }
-.contact{
-    width: 100%;
-    height: 80vh;
-    background-color: #C5CAFF;
-}.contact h6{
-    font-size: 10px;
+.contact-section {
+  background: linear-gradient(135deg, #f5f4cc, #dce4c7);
+  border-radius: 12px;
 }
-.contact h3{
-    font-size: 20px;
-    letter-spacing: 2px;
+
+.contact-section h3 {
+  color: #333;
 }
-.contact form{
-    margin-top:-20px;
+
+.contact-section input,
+.contact-section textarea {
+  border-radius: 8px;
 }
+.contact-section input::placeholder,
+.contact-section textarea::placeholder{
+    color: #a4a3a3;
+}
+
+
+.contact-section button {
+  border-radius: 8px;
+}
+
+
 .footer{
     background-color: #000;
     color: #fff;
