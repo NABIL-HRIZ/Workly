@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100 top-0 "style="z-index: 999;">
   <div class="container-fluid">
@@ -38,44 +39,48 @@
         
       </ul>
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contactez-nous</button>
-         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+         <div class="modal fade" style="z-index:2000;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog"id="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel" style="color:#866FE3;">Contactez-nous</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
     <div class="modal-body">
-  <form>
-    <div class="row">
-      <div class="col-md-6 mb-3">
-        <label for="fullName" class="col-form-label">Nom Complet</label>
-        <input type="text" class="form-control" id="fullName" name="fullName">
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="phone" class="col-form-label">Téléphone</label>
-        <input type="text" class="form-control" id="phone" name="phone">
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="email" class="col-form-label">Adresse Email</label>
-        <input type="email" class="form-control" id="email" name="email">
-      </div>
-      <div class="col-md-6 mb-3">
-        <label for="company" class="col-form-label">Entreprise</label>
-        <input type="text" class="form-control" id="company" name="company">
-      </div>
+ 
+      <form onsubmit="sendMail(event)">
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="fullName" class="col-form-label">Nom Complet</label>
+      <input type="text" class="form-control" id="fullName" name="fullName">
     </div>
+    <div class="col-md-6 mb-3">
+      <label for="phone" class="col-form-label">Téléphone</label>
+      <input type="text" class="form-control" id="phone" name="phone">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="email" class="col-form-label">Adresse Email</label>
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="company" class="col-form-label">Entreprise</label>
+      <input type="text" class="form-control" id="company" name="company">
+    </div>
+  </div>
 
-    <div class="mb-3">
-      <label for="message" class="col-form-label">Message:</label>
-      <textarea class="form-control" name="message" id="message" rows="4"></textarea>
-    </div>
-  </form>
+  <div class="mb-3">
+    <label for="message" class="col-form-label">Message:</label>
+    <textarea class="form-control" name="message" id="message" rows="4"></textarea>
+  </div>
+
+  <div class="modal-footer">
+    <button type="submit" class="btn" style="margin-right: 20px;">Envoyer</button>
+  </div>
+</form>
+
 </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn" style="margin-right: 20px;">Envoyer</button>
-      </div>
+      
     </div>
   </div>
 </div>
@@ -85,22 +90,11 @@
     </header>
 
 <section class="section-hero mt-5" id="acceil">
-    <div class="container mb-5">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-           <h1 class="mb-3 fs-1">Bienvenue chez <span style="color:blue; font-weight: bold;font-size:50px !important;">Workly</span> Votre partenaire pour un avenir professionnel réussi.</h1>
-           <p class="mb-4">
-              Votre prochain espace de travail. Que vous soyez entrepreneur ou travailleur à distance, Workly offre un environnement calme avec tout le nécessaire pour vous concentrer et vous développer.
-            </p>
-            <a href="#services" class="btn">Explorer nos services</a>
-
-        </div>
-      <div class="col-md-6 text-center">
-        <img class="home_pic" src="assets/workly_home.jpg" alt="Home_img">
-      </div>
-
-    </div>
-      </div>
+   <h1 id="h1">Travailler devient simple</h1>
+   <img src="assets/workly_home.jpg" alt="" id="img1">
+   <img src="assets/workly_home1.jpg" alt="" id="img2">
+   <img src="assets/workly_home2 (2).jpg" alt="" id="img3">
+   <a href="#services" class="btn" id="btn">Explorez nos services</a>
     
 </section>
 
@@ -109,7 +103,7 @@
      <div class="container mb-5">
         <div class="row align-items-center">
             <div class="col md-6 text-center">
-            <h2 class="fs-2 w-75 mt-4 text-white">Workly est plus que de simples bureaux et du Wi-Fi.</h2>
+            <h2 class="fs-2 w-75 mt-4 text-white" id="service-title">Workly est plus que de simples bureaux et du Wi-Fi.</h2>
             </div>
            <div class="col-md-4 text-center">
             <p class="text-white ">C'est une communauté florissante de freelances, de startups et de créatifs qui croient en un meilleur travail—ensemble.</p>
@@ -177,18 +171,66 @@
             <div class=" offers  col md-6 text-center">
                 <h3>Passe quotidien</h3>
                <p>Accédez à l'espace de travail pour une seule journée, idéal pour les travailleurs à distance et les voyageurs qui ont besoin d'un endroit productif sans engagement à long terme.</p>
-            <button class="btn-offers liquid"><span>En savoir plus</span></button>
+          <button type="button" class="btn-offers liquid" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span>En savoir plus</span></button>  
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" style="color: rgb(122, 122, 122);" id="staticBackdropLabel">Passe quotidien :<del style="color: red;font-size: 15px;margin-left: 20px;">200 MAD</del> <span style="color: green;font-size:15px;margin-left:10px;">170 MAD</span></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt placeat sint. Corporis veritatis excepturi eum ipsum amet, velit ea? Minima delectus quasi magnam eos veritatis et neque, reiciendis vel?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Rejoignons Maintenant</button>
+      </div>
+    </div>
+  </div>
+</div>
             </div>
             <div class=" offers  col md-6 text-center">
                 <h3>Bureau dédié</h3>
                <p>Votre propre bureau dans un espace partagé. Idéal pour les freelances ou les professionnels qui recherchent de la constance et un sentiment de communauté.</p>
-            <button class="btn-offers liquid"><span>En savoir plus</span></button>
+             <button type="button" class="btn-offers liquid" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span>En savoir plus</span></button>  
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" style="color: rgb(122, 122, 122);" id="staticBackdropLabel">Bureau dédié :<del style="color: red;font-size: 15px;margin-left: 20px;">400 MAD</del> <span style="color: green;font-size:15px;margin-left:10px;">280 MAD</span></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt placeat sint. Corporis veritatis excepturi eum ipsum amet, velit ea? Minima delectus quasi magnam eos veritatis et neque, reiciendis vel?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Rejoignons Maintenant</button>
+      </div>
+    </div>
+  </div>
+            </div>
            
             </div>
             <div class="offers  col md-6 text-center">
                <h3>Bureau Privé</h3>
                <p>Un espace privé entièrement meublé pour votre équipe, profitez du confort, de l'intimité et d'un accès complet à toutes les commodités. Un espace privé entièrement meublé pour votre équipe.</p>
-            <button class="btn-offers liquid"><span>En savoir plus</span></button>
+                   <button type="button" class="btn-offers liquid" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span>En savoir plus</span></button>  
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" style="color: rgb(122, 122, 122);" id="staticBackdropLabel">Bureau Privé :<del style="color: red;font-size: 15px;margin-left: 20px;">500 MAD</del> <span style="color: green;font-size:15px;margin-left:10px;">450 MAD</span></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt placeat sint. Corporis veritatis excepturi eum ipsum amet, velit ea? Minima delectus quasi magnam eos veritatis et neque, reiciendis vel?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Rejoignons Maintenant</button>
+      </div>
+    </div>
+  </div>
+</div>
            
             </div>  
 
@@ -234,7 +276,7 @@
           N’hésitez pas à nous contacter.
         </h3>
 
-        <form>
+        <form onsubmit="sendMail(event)">
           <div class="row mb-3">
             <div class="col">
               <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Votre nom complet">
@@ -263,6 +305,7 @@
     </div>
   </div>
 </section>
+
 
 
     <footer class="footer">
@@ -296,8 +339,21 @@
     </footer>
 
     
-    <script src="script.js"></script>
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "vAklvnFBES1FKcSlV",
+      });
+   })();
+</script>
 </body>
 
 </html>
