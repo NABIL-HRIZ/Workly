@@ -83,7 +83,7 @@ function sendMail(event) {
     .then(function(response) {
       alert("Email envoyé !");
        // fermer le modal 
-      const modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
+      const modal = bootstrap.Modal.getInstance(document.getElementById('modal-dialog'));
       modal.hide();
 
       // revenir  à la section Hero
