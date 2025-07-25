@@ -68,7 +68,7 @@ header .btn{
     position: relative;
     width:50%;
     text-align: center;
-    z-index:300;
+    z-index:900;
 }
 .section-hero>h1::after{
     content: "";
@@ -311,7 +311,220 @@ margin-right: 20px;
 }
 .footer .infos span{
     font-size:15px;
-    color: #d3d3d3;
-    
+    color: #d3d3d3;   
 }
+@media (max-width: 768px) {
+  .section-hero {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .section-hero > h1 {
+    font-size: 32px;
+    width:80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .section-hero > h1::after {
+    width: 60%;
+    height: 6px;
+    bottom: -10px;
+  }
+
+  .section-hero #img1,
+  .section-hero #img2,
+  .section-hero #img3 {
+    position: static;
+    width: 100%;
+    height:300px;
+    margin-bottom: 15px;
+  }
+
+  .section-hero img:hover {
+    margin-top: 0;
+  }
+
+  .section-hero #btn {
+    position: static;
+    margin-top: 20px;
+  }
+  .section-services {
+    height: auto;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .section-services h6 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #service-title {
+    font-size: 20px;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .section-services p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .services-icons {
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  .services-icons h3 {
+    font-size: 16px;
+  }
+
+  .section-services i {
+    font-size: 30px;
+  }
+
+  .section-services .row {
+    flex-direction: column !important;
+  }
+  .section-offers {
+    height: auto;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .section-offers h6 {
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .section-offers > h3 {
+    font-size: 18px;
+    width: 100%;
+    margin: 0 auto 30px auto;
+    padding: 0 10px;
+  }
+
+  .offers {
+    margin: 10px auto;
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .offers h3 {
+    font-size: 18px;
+  }
+
+  .offers p {
+    font-size: 14px;
+  }
+
+  .btn-offers {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .section-offers .row {
+    flex-direction: column !important;
+  }
+  .missions {
+    padding: 40px 15px;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .missions h6 {
+    font-size: 12px;
+  }
+
+  .missions h3 {
+    font-size: 18px;
+    width: 100% !important;
+    padding: 0 10px;
+  }
+
+  .missions .container {
+    padding: 20px 10px;
+  }
+
+  .missions .row {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .missions .col {
+    width: 100%;
+  }
+
+
+  .missions h4 {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 20px 10px;
+  }
+
+  .footer .descri {
+    padding: 0 10px;
+  }
+
+  .footer h2 {
+    font-size: 28px;
+  }
+
+  .footer p {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .social-media {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .social-media i {
+    margin: 0 10px;
+    font-size: 24px;
+  }
+
+  .infos {
+    align-items: center;
+    width: 100%;
+  }
+
+  .infos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .infos span {
+    font-size: 14px;
+  }
+
+  .footer .infos i {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  .gallery h6{
+    text-align: center;
+  }
+  .gallery img{
+    height: 300px;
+  }
+.nav-link:hover{
+ width:30%;
+ }
+}
+
 

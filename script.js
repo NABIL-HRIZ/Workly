@@ -82,15 +82,7 @@ function sendMail(event) {
   emailjs.send("service_119v33b", "template_h5eztst", params)
     .then(function(response) {
       alert("Email envoyé !");
-       // fermer le modal 
-      const modal = bootstrap.Modal.getInstance(document.getElementById('modal-dialog'));
-      modal.hide();
-
-      // revenir  à la section Hero
-      document.getElementById("acceil").scrollIntoView({ behavior: "smooth" });
-
-      // reset form
-      document.querySelector("#modal-dialog").reset();
+     
     }, function(error) {
       alert("Erreur : " + error.text);
     });
